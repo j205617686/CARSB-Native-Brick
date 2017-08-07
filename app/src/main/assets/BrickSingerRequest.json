@@ -1,0 +1,43 @@
+{
+	"brick" : {
+		"id" : "BrickSinger",
+		"name" : "Search",
+		"description" : "Search albums and songs",
+		"pic" : "url",
+		"plugins" : [],
+		"outputEvent" : [{
+				"trigger" : "click",
+				"id" : "oe01",
+				"eventType" : "singer",
+				"outputTriggerExample" : {
+					"style" : "text",
+					"value" : "adele"
+				}
+			}
+		],
+		"inputEvent" : [{
+				"eventType" : "none"
+			}
+		],
+		"kernelResourceProvider" : [{
+				"type" : "song",
+				"defaultResourceUrl" : "none",
+				"action" : "read",
+				"componentServiceReplacement" : {
+					"task" : "none",
+					"url" : "none"
+				}
+			}
+		],
+		"optionalResourceProvider" : [{
+				"type" : "write click times",
+				"defaultResourceUrl" : "url",
+				"action" : "write"
+			}, {
+				"type" : "read click times",
+				"defaultResourceUrl" : "url",
+				"action" : "read"
+			}
+		]
+	}
+}

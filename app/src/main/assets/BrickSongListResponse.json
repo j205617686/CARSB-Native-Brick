@@ -1,0 +1,37 @@
+{
+	"brick" : {
+		"id" : "BrickSongListResponse",
+		"name" : "Search",
+		"description" : "Search albums and songs",
+		"pic" : "url",
+		"plugins" : [],
+		"outputEvent" : [{
+				"eventType" : "none",
+			}
+		],
+		"inputEvent" : [{
+				"eventType" : "singer"
+			}
+		],
+		"kernelResourceProvider" : [{
+				"type" : "song",
+				"defaultResourceUrl" : "none",
+				"action" : "read",
+				"componentServiceReplacement" : {
+					"task" : "none",
+					"url" : "none"
+				}
+			}
+		],
+		"optionalResourceProvider" : [{
+				"type" : "write click times",
+				"defaultResourceUrl" : "url",
+				"action" : "write"
+			}, {
+				"type" : "read click times",
+				"defaultResourceUrl" : "url",
+				"action" : "read"
+			}
+		]
+	}
+}

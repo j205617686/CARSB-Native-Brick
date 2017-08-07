@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="556dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/topbar1" />
+
+        <EditText
+            android:layout_width="319dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText1"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/fb_et2"
+            android:layout_gravity="left|top"
+            android:textColor="#FFFFFF" />
+
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/button" />
+
+</LinearLayout>

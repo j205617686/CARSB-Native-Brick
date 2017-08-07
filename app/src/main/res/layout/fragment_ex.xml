@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_gravity="center_horizontal|top">
+
+        <ImageView
+            android:layout_width="573dp"
+            android:layout_height="47dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/topbar1" />
+
+        <Button
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:id="@+id/btn_sub"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/fc_tv"
+            android:layout_gravity="left|top"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:layout_gravity="left|center_vertical"
+            android:text="120" />
+
+        <EditText
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/et2"
+            android:layout_gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/past"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:layout_gravity="right|top"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

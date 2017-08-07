@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:background="#ffffff"
+    android:weightSum="1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:layout_gravity="center_horizontal|top"
+        android:background="@drawable/background2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/fc_tv"
+            android:layout_gravity="left|top"
+            android:textColor="#004098"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  age"
+            android:id="@+id/text"
+            android:textSize="20dp"
+            android:layout_alignBottom="@+id/fa_et"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  weight"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/text"
+            android:layout_alignStart="@+id/text"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  gender"
+            android:id="@+id/textView5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginBottom="35dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  kilograms"
+            android:id="@+id/textView6"
+            android:textSize="20dp"
+            android:layout_alignTop="@+id/text"
+            android:layout_alignLeft="@+id/textView7"
+            android:layout_alignStart="@+id/textView7" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  years old"
+            android:id="@+id/textView7"
+            android:textSize="20dp"
+            android:layout_marginLeft="62dp"
+            android:layout_marginStart="62dp"
+            android:layout_alignTop="@+id/fa_et2"
+            android:layout_alignLeft="@+id/fc_tv"
+            android:layout_alignStart="@+id/fc_tv" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fa_et2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView5"
+            android:text="52"
+            android:background="#ffffff"
+            android:layout_toStartOf="@+id/textView6"
+            android:layout_toLeftOf="@+id/textView6"
+            android:clickable="false"
+            android:autoText="false"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fa_et"
+            android:text="23"
+            android:background="#FFFFFF"
+            android:layout_toLeftOf="@+id/textView6"
+            android:layout_below="@+id/fc_tv"
+            android:layout_alignLeft="@+id/fa_et2"
+            android:layout_alignStart="@+id/fa_et2"
+            android:clickable="false"
+            android:autoText="false"
+            android:inputType="none" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignEnd="@+id/textView6">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="male"
+                android:id="@+id/radioButton2"
+                android:checked="true"
+                android:layout_alignTop="@+id/textView5"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5"
+                android:layout_alignBottom="@+id/textView5" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female  "
+                android:id="@+id/radioButton1"
+                android:layout_alignTop="@+id/radioButton"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:checked="false"
+                android:layout_alignBottom="@+id/radioButton" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="send"
+            android:id="@+id/fa_btn"
+            android:background="#FFFFFF"
+            android:layout_gravity="right"
+            android:layout_weight="0.05"
+            android:layout_alignTop="@+id/radioGroup"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_alignBottom="@+id/radioGroup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="true"
+            android:id="@+id/textv"
+            android:layout_alignBottom="@+id/fa_et"
+            android:layout_alignRight="@+id/fa_btn"
+            android:layout_alignEnd="@+id/fa_btn"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</LinearLayout>
